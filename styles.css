@@ -533,3 +533,10 @@ nav a:focus {
       max-width: 50%;
       height: auto;
     }
+/* Responsive video: scale to container while keeping aspect ratio */
+.responsive-video,
+video.responsive-video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

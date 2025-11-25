@@ -530,6 +530,47 @@ nav a:focus {
   }
 }
 .responsive-image {
-      max-width: 50%;
-      height: auto;
-    }
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 8px 0;
+}
+
+/* Simple responsive 2-column container used by `index.html` */
+.responsive-container {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+.responsive-container .column {
+  flex: 1 1 220px;
+  min-width: 160px;
+  background: #fff;
+  border: 1px solid #e6eef5;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+  text-align: left;
+}
+
+/* Generic boxes used for demo media-query/responsive examples */
+.media-query-box,
+.responsive-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+  margin: 12px 0;
+}
+
+@media (max-width: 600px) {
+  .media-query-box,
+  .responsive-box {
+    background: linear-gradient(90deg,#f8fafc,#eef6fb);
+    font-size: 0.95rem;
+  }
+}
